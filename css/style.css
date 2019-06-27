@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  padding-left: 75px;
+  font-size: 45px;
+}
+
+p{
+  font-size: 20px;
+}
+#content{
+  max-width: 1200px;
+  margin : 0 auto;
+}
+section{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+
+.small-image{
+  height: 150px;
+  width: 250px;
+  background: orange;
+}
+.small-text{
+    height: 50px;
+  width: 250px;
+  background: lightgrey;
+  margin-top: 50px;
+}
+
+#hero-image{
+  min-width: 74%;
+  height: 350px;
+  background: lightseagreen;
+  margin-right: 55px;
+}
+
+.large-image{
+  margin-top: 45px;
+  height: 175px;
+  width: 300px;
+  background: orange;
+}
+.large-text{
+  height: 50px;
+  width: 300px;
+  background: lightgrey;
+  margin-top: 50px;
+}
+
+
+@media screen and (max-width: 1100px){
+  body{
+    margin: 0 30px;
+  }
+ h1{
+   padding: 0;
+ }
+ section{
+  flex-direction: column
+ }
+ #small-article{
+  flex-direction: row;
+  flex-wrap: wrap;
+ /* text-align: center */
+ justify-content: center;
+ }
+ .small-image{
+   margin: 30px 15px;
+ }
+  .small-text{
+   margin: 20px 15px;
+ }
+ #hero-image{
+   min-width: 100%;
+ }
+
+.large-image{
+  min-width: 100%;
+}
+.large-text{
+  min-width: 100%;
+}
+}
